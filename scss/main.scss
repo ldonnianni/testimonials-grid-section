@@ -1,28 +1,40 @@
 @import 'config';
 
 
-.container {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(2, 270px);
-
-    justify-content: center;
-    align-content: center;
+.testimonials-wrapper {
+    height: 50vh;
+    width: 70vw;
 
     @include mobile {
-        background-color: red;
-
-        max-width: 768px;
-        height: 100vh;
-
-        grid-template-columns: 1fr;
-        grid-row: auto;
+        width: 100%;
     }
 
 }
+
+.container {
+    max-height: 100%;
+    width: 60%;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(6, 250px);
+    grid-template-rows: auto;
+
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mobile {
+        margin-top: 50px;
+        width: 80%;
+        grid-template-columns: 250px;
+        grid-template-rows: auto;
+
+        justify-content: center;
+        align-content: start;
+    }
+}
+
 
 .card {
     color: $White;
@@ -81,9 +93,9 @@
         grid-row: 1;
 
         @include mobile {
-            grid-column: 1;
+            grid-column: auto;
+            grid-row: auto;
         }
-    
         
     }
 
@@ -91,6 +103,11 @@
         background-color: $Very-dark-grayish-blue;
         grid-column: 3;
         grid-row: 1;
+
+        @include mobile {
+            grid-column: auto;
+            grid-row: auto;
+        }
     }
 
     &--jeanette {
@@ -98,12 +115,22 @@
         color: $Very-dark-grayish-blue;
         grid-column: 1 ;
         grid-row: 2;
+
+        @include mobile {
+            grid-column: auto;
+            grid-row: auto;
+        }
     }
 
     &--patrick{
         background-color: $Very-dark-blackish-blue;
         grid-column: 2 / span 2 ;
         grid-row: 2;
+
+          @include mobile {
+            grid-column: auto;
+            grid-row: auto;
+        }
     }
 
     &--kira {
@@ -111,5 +138,11 @@
         color: $Very-dark-grayish-blue;
         grid-column: 4;
         grid-row: 1 / span 2;
+
+        @include mobile {
+            grid-column: auto;
+            grid-row: auto;
+
+        }
     }
 }
