@@ -1,0 +1,42 @@
+$Moderate-violet: hsl(263, 55%, 52%);
+$Very-dark-grayish-blue: hsl(217, 19%, 35%);
+$Very-dark-blackish-blue: hsl(219, 29%, 14%);
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(0, 0%, 81%);
+$Light-grayish-blue: hsl(210, 46%, 95%);
+
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: Barlow Semi Condensed;
+    font-size: 13px;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {  
+    height:100vh;
+    background-color: $Light-grayish-blue;
+}
+
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+        
+    }
+    
+}
+
+// @function set-text-color($color) {
+//     @if (lightness($color) > 40%) {
+//         @return $Very-dark-grayish-blue;
+//     }
+//     @else {
+//         @return $White;
+//     }
+// }
+
