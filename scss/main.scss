@@ -4,6 +4,7 @@
 body {
     display: flex;
     justify-content: center;
+    align-content: center;
 
 }
 
@@ -138,7 +139,13 @@ body {
         @include mobile {
             grid-column: auto;
             grid-row: auto;
-
         }
     }
+}
+
+.attribution {
+    position: fixed;
+    bottom:0;
+    padding: 10px;
+    background-color:$Light-grayish-blue;
 }
