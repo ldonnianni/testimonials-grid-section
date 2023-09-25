@@ -18,6 +18,7 @@ body {
 body {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 .container {
@@ -142,4 +143,11 @@ body {
     grid-column: auto;
     grid-row: auto;
   }
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  background-color: hsl(210, 46%, 95%);
 }/*# sourceMappingURL=main.css.map */
