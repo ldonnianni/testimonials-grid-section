@@ -33,8 +33,9 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container {
-    height: 200vh;
+    height: 240vh;
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 80%;
     grid-template-columns: 250px;
     grid-template-rows: auto;
